@@ -22,4 +22,10 @@ describe JiraIssues do
         expect(jn.created_by_week.count).to eq(3)
         expect(jn.closed_by_week.count).to eq(1)
     end
+
+    it "translates workfow steps" do 
+        expect(JiraIssues::JiraWorkflow.issue_status_for_name('PR','Open')).to eq(JiraIssues::JiraWorkflow::OPEN)
+        expect(JiraIssues::JiraWorkflow.issue_status_for_name('PR','In Progress')).to eq(JiraIssues::JiraWorkflow::IN_PROGRESS)
+        expect(JiraIssues::JiraWorkflow.issue_status_for_name('PR','Done')).to eq(JiraIssues::JiraWorkflow::CLOSED)
+    end
 end

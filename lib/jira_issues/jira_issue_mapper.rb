@@ -21,7 +21,7 @@ module JiraIssues
     private
 
     def decode_status(issue)
-      JiraIssues::JiraWorkflow.issue_status_for_status_name(project_key(issue),issue.status.name)
+      JiraIssues::JiraWorkflow.issue_status_for_name(project_key(issue),issue.status.name)
     end
 
     def project_key(issue)
