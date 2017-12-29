@@ -32,12 +32,14 @@ issues_navigator = jq.jql_query 'project = "Project Name" and ( created > -40d o
 '''
 
 ## Filtering issues
+
 '''
 issues_navigator.open.issues -- open issues
 issues_navigator.closed.issues -- closed issues
 '''
 
 ## Stats
+
 '''
 issues_navigator.created_by_week
 issues_navigator.closed_by_week
