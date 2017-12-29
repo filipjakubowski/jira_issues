@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.homepage =    'https://github.com/filipjakubowski'
 
   s.require_paths = %w[lib]
-  s.files = %w{lib/jira_issues.rb lib/jira_issues/jira_adapter.rb lib/jira_issues/jira_issue_mapper.rb lib/jira_issues/jira_issues_navigator.rb lib/jira_issues/jira_workflow.rb lib/jira_issues/jira_query.rb}
+  s.files = %w{lib/jira_issues.rb lib/jira_issues/jira_adapter.rb lib/jira_issues/jira_issue_mapper.rb lib/jira_issues/jira_issues_navigator.rb lib/jira_issues/jira_workflow.rb lib/jira_issues/jira_query.rb lib/jira_issues/jira_issues_stats.rb lib/jira_issues/jql_lib.rb}
 
   s.add_dependency 'jira-ruby'
   s.add_dependency 'byebug'
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   ## those that are only needed during development
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec"
+  s.add_development_dependency "rubocop"
 
   s.add_development_dependency 'fakeweb'
   s.add_development_dependency 'pry'
