@@ -5,6 +5,7 @@ require "jira_issues/version"
 Gem::Specification.new do |s|
   s.name        = 'jira-issues'
   s.version     = JiraIssues::VERSION
+  s.licenses    = ['MIT']
 
   ## Edit these as appropriate
   s.summary     = "Jira Issues"
@@ -19,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.require_paths = %w[lib]
   s.files         = `git ls-files -- {lib}/*`.split("\n")
-  
+
   s.add_dependency 'jira-ruby', '~>1.4.3'
 
   ## List your development dependencies here. Development dependencies are
