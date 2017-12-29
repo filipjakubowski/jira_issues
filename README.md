@@ -28,17 +28,19 @@ Please keep in mind that gem will have all and only access to issues and project
 ```
 require 'jira_issues'
 q = JiraIssues::JiraQuery.new
-issues_navigator = jq.jql_query 'project = "Project Name" and ( created > -40d or status not in (Done) )'
-'''
+issues = q.jql_query 'project = "Project Name" and ( created > -40d )'
+```
 
 ## Filtering issues
-'''
+
+```
 issues_navigator.open.issues -- open issues
 issues_navigator.closed.issues -- closed issues
-'''
+```
 
 ## Stats
-'''
+
+```
 issues_navigator.created_by_week
 issues_navigator.closed_by_week
-'''
+```
