@@ -26,6 +26,7 @@ issues = q.jql_query 'project = "Project Name" and ( created > -40d )'
 
 ## Filtering issues
 ```
+issues.all -- all returned issues
 issues.open -- open issues
 issues.closed -- closed issues
 ```
