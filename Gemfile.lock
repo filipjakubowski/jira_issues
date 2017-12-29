@@ -39,9 +39,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jira-ruby
-  rake
-  rspec
+  jira-ruby (~> 1.4.3)
+  rake (>= 12.3.0)
+  rspec (>= 3.7.0)
 
 BUNDLED WITH
    1.16.0

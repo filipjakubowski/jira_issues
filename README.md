@@ -44,3 +44,13 @@ issues_navigator.closed.issues -- closed issues
 issues_navigator.created_by_week
 issues_navigator.closed_by_week
 ```
+
+## JQL Library
+
+To remove need to write your query over and over again we will provide some queries in separate class. 
+
+```
+q = JiraIssues::JiraQuery.new
+issues_navigator = jq.jql_query JiraIssues::JqlLib.my_issues
+issues_navigator.open.issues -- my open issues
+```

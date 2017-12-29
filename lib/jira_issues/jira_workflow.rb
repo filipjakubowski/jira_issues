@@ -17,7 +17,8 @@ module JiraIssues
         'Open'        => OPEN,
         'Blocked'     => BLOCKED,
         'In Progress' => IN_PROGRESS,
-        'Done'        => CLOSED
+        'Done'        => CLOSED,
+        'Closed'      => CLOSED
       }.fetch(status_name)
     end
   end
