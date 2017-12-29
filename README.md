@@ -9,7 +9,12 @@ Results of JIRA JQL are stripped to selected fields for more user friendly expos
 
 ## Getting Started
 
-First you need to set up your environment variables to access your JIRA repository. 
+First you can istall latest released version of gem from rubygems.org. 
+```
+gem install jira-issues
+```
+
+Than you need to set up your environment variables to access your JIRA repository. 
 Please keep in mind that gem will have all and only access to issues and project that reflects access of selected account. 
 
 - **ENV['JIRA_URL']**
