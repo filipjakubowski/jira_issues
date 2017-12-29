@@ -18,20 +18,20 @@ Please keep in mind that gem will have all and only access to issues and project
 
 ## Running JQL Query
 
-'''
+```
 require 'jira_issues'
 q = JiraIssues::JiraQuery.new
-issues = jq.jql_query 'project = "Project Name" and ( created > -40d or status not in (Done) )'
-'''
+issues = jq.jql_query 'project = "Project Name" and ( created > -40d )'
+```
 
 ## Filtering issues
-'''
+```
 issues.open -- open issues
 issues.closed -- closed issues
-'''
+```
 
 ## Stats
-'''
-issues.created_by_week
-issues.closed_by_week
-'''
+```
+issues.created_by_week -- selected issues count week by week
+issues.closed_by_week -- selected issues count week by week
+```
