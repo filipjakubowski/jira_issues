@@ -21,7 +21,7 @@ Please keep in mind that gem will have all and only access to issues and project
 ```
 require 'jira_issues'
 q = JiraIssues::JiraQuery.new
-issues = jq.jql_query 'project = "Project Name" and ( created > -40d )'
+issues = q.jql_query 'project = "Project Name" and ( created > -40d )'
 ```
 
 ## Filtering issues
