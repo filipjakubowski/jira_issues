@@ -34,13 +34,13 @@ issues = q.jql_query 'project = "Project Name" and ( created > -40d )'
 ## Filtering issues
 
 ```
-issues.all -- all returned issues
-issues.open -- open issues
-issues.closed -- closed issues
+issues_navigator.open.issues -- open issues
+issues_navigator.closed.issues -- closed issues
 ```
 
 ## Stats
+
 ```
-issues.created_by_week -- selected issues count week by week
-issues.closed_by_week -- selected issues count week by week
+issues_navigator.created_by_week
+issues_navigator.closed_by_week
 ```
