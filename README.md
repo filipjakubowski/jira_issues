@@ -1,6 +1,8 @@
 jira issues
 ===========
 
+[![Build Status](https://travis-ci.org/filipjakubowski/jira_issues.svg?branch=master)](https://travis-ci.org/filipjakubowski/jira_issues)
+
 ## description
 
 Gem that allows you to navigate throu jour JIRA projects easily, get stats and in future to transit and manage tickets. 
@@ -26,18 +28,17 @@ Please keep in mind that gem will have all and only access to issues and project
 ```
 require 'jira_issues'
 q = JiraIssues::JiraQuery.new
-issues = q.jql_query 'project = "Project Name" and ( created > -40d )'
-```
+issues_navigator = jq.jql_query 'project = "Project Name" and ( created > -40d or status not in (Done) )'
+'''
 
 ## Filtering issues
-```
-issues.all -- all returned issues
-issues.open -- open issues
-issues.closed -- closed issues
-```
+'''
+issues_navigator.open.issues -- open issues
+issues_navigator.closed.issues -- closed issues
+'''
 
 ## Stats
-```
-issues.created_by_week -- selected issues count week by week
-issues.closed_by_week -- selected issues count week by week
-```
+'''
+issues_navigator.created_by_week
+issues_navigator.closed_by_week
+'''

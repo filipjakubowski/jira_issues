@@ -14,10 +14,10 @@ describe JiraIssues do
         }
 
         jn = issue_nav.jql_query 'project = "Project" and ( created > -40d )'
-        expect(jn.done.count).to eq(2)
-        expect(jn.open.count).to eq(1)
-        expect(jn.in_progress.count).to eq(1)
-        expect(jn.open.first[:priority]).to eq("Major")
+        expect(jn.done.issues.count).to eq(2)
+        expect(jn.open.issues.count).to eq(1)
+        expect(jn.in_progress.issues.count).to eq(1)
+        expect(jn.open.issues.first[:priority]).to eq("Major")
 
         expect(jn.created_by_week.count).to eq(3)
         expect(jn.closed_by_week.count).to eq(1)

@@ -1,9 +1,9 @@
 module JiraIssues
   class JiraWorkflow
-    OPEN = 'Open'
+    OPEN        = 'Open'
     IN_PROGRESS = 'InProgress'
-    BLOCKED = 'Blocked'
-    CLOSED = 'Closed'
+    BLOCKED     = 'Blocked'
+    CLOSED      = 'Closed'
     # This is WIP
     # This class should be able to map and unify:
     #  - statuses
