@@ -1,7 +1,10 @@
 jira issues
 ===========
 
+[![Gem Version](https://badge.fury.io/rb/jira-issues.svg)](https://badge.fury.io/rb/jira-issues)
 [![Build Status](https://travis-ci.org/filipjakubowski/jira_issues.svg?branch=master)](https://travis-ci.org/filipjakubowski/jira_issues)
+[![Coverage Status](https://coveralls.io/repos/github/filipjakubowski/jira_issues/badge.svg?branch=master)](https://coveralls.io/github/filipjakubowski/jira_issues?branch=master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## description
 
