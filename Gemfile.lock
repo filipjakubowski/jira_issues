@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jira-issues (0.0.3)
+    jira-issues (0.0.4)
       jira-ruby (~> 1.4)
 
 GEM
