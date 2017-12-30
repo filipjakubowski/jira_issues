@@ -1,3 +1,4 @@
+#@author Filip Jakubowski
 module JiraIssues
   class JiraWorkflow
     OPEN        = 'Open'
